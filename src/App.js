@@ -1,23 +1,107 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from './components/form/Form';
+import styles from './styles.module.css';
 
 function App() {
+
+
+
+
+  const sample=[
+    {
+    id:"1",
+    type:"Text",
+    name:"text",
+    className:"",
+   element: <input type="text" placeholder='Element is true' className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' />,
+    iselement:false,
+    label:"Company Name",
+
+ 
+
+
+
+  
+},
+
+{
+  id:"2",
+  type:"password",
+  name:"text",
+  className:"",
+
+  iselement:false,
+  label:"Company Website",
+
+  render: (item) => {
+    return <div>{item}</div>;
+  },
+
+},
+{
+  id:"3",
+  type:"text",
+  name:"Text",
+  className:"",
+ 
+  iselement:false,
+  label:"Company Email",
+
+
+
+},
+{
+  id:"3",
+  type:"text",
+  name:"Text",
+  className:"",
+ 
+  iselement:false,
+  label:"Company Email",
+
+
+
+},
+{
+  id:"3",
+  type:"text",
+  name:"Text",
+  className:"",
+ 
+  iselement:false,
+  label:"Company Email",
+
+
+
+},
+
+{
+  id:"3",
+  type:"text",
+  name:"Text",
+  className:"",
+
+  iselement:false,
+  label:"Company Address",
+
+
+
+},
+{
+  id:"3",
+  type:"text",
+  name:"Text",
+  className:"",
+
+  iselement:false,
+  label:"Phone Number",
+
+
+
+}
+]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container} >
+<Form formData={sample} />
     </div>
   );
 }

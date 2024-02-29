@@ -1,0 +1,8 @@
+.container {
+    width: 100%; /* Equivalent to w-full */
+    display: flex; /* Equivalent to flex */
+    justify-content: center; /* Equivalent to justify-center */
+    align-items: center; /* Equivalent to items-center */
+    background-color: #f3e5f5; /* Equivalent to bg-purple-100 */
+    height: auto;
+  }
