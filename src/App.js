@@ -1,5 +1,7 @@
 import Form from './components/form/Form';
 import styles from './styles.module.css';
+import React from 'react';
+import './App.css';
 
 function App() {
 
